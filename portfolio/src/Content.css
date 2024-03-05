@@ -1,0 +1,322 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+:root{
+    --text-color:#178582;
+    --header: #0A1828;
+    --text: #BFA181;
+}
+.container{
+    margin: 0;
+    min-width: 100%;
+}
+.container_0{
+    color: var(--text);
+    background-color: var(--header);
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    height: fit-content;
+}
+.container_0 .text{
+    color: var(--text);
+}
+.my-name{
+    font-size: 5rem;
+    font-family: 'Playfair Display',sans-serif;
+}
+.text{
+    font-family: 'Lato',sans-serif;
+}
+.container_0{
+    font-size: 1rem;
+}
+.certificates{
+    position: relative;
+    font-size: 2rem;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-family: 'Playfair Display',sans-serif;
+    background-color: var(--header);
+    color: white;
+}
+/*.container_2{
+    padding: 20px 10px 20px 10px;
+    background-color: burlywood;
+    display: inline grid;
+    column-gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}*/
+.container_2{
+    display: flex;
+    column-gap: 10px;
+    background-color:var(--header);
+    flex-direction: row;
+    width: 100%;
+    padding: 20px 20px 20px 50px;
+    overflow-x: scroll;
+}
+
+.container_2 .certificate-1 p{
+    padding: 20px 0px 20px 0px;
+    background-color: var(--header);
+    border: 5px solid var(--text);
+    width:20vw;
+    height:20vh;
+    text-align: center;
+    align-items: center;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    /*position: relative;*/
+}
+.certificate-1 p{
+    color: var(--text);
+}
+::-webkit-scrollbar{
+    background-color: var(--header);
+}
+.container .container_3{
+    background-color: var(--header);
+    display: grid;
+    row-gap: 5px;
+}
+.container_3{
+    height: fit-content;
+    width: fit-content;
+    width: 100%;
+    padding-left: 30%;
+}
+.container_3 .container_3_1 h5{
+    color: var(--text);
+}
+/*.container .container_3 div{
+    /*padding: 0px;*/
+    /*padding-left: 50px;
+    border: 1px solid black;
+    border-radius: 10px;
+}*/
+
+.container_3 .container_3_1{
+    width: fit-content;
+    height: fit-content;
+    width: 60%;
+
+}
+
+.skill{
+    position: relative;
+    font-size: 2rem;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-family: 'Playfair Display',sans-serif;
+    background-color: var(--header);
+    color: white;
+}
+.projects{
+    position: relative;
+    font-size: 2rem;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-family: 'Playfair Display',sans-serif;
+    background-color: var(--header);
+    color: white;
+}
+strong{
+    text-decoration-line: underline;
+    color: var(--text);
+}
+.container .resume{
+    border: 2px solid;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 2px 2px var(--text);
+    position: relative;
+    z-index: 1px;
+}
+
+.bar{
+    display: block;
+    border: 1px solid black;
+    background: white;
+    border-radius: 1px;
+    overflow: hidden;
+    height: 15px;
+    transition: all ease-in 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.bar span{
+    height: 20px;
+    background: var(--text);
+    float: left;
+}
+.java{
+    width: 80%;
+    animation: java 3s;
+}
+.c{
+    width: 20%;
+    animation: c 3s;
+}
+.cpp{
+    width: 15%;
+    animation: cpp 3s;
+}
+.python{
+    width: 50%;
+    animation: python 3s;
+}
+.sql{
+    width: 30%;
+    animation: sql 3s;
+}
+.html{
+    width: 80%;
+    animation: html 3s;
+}
+.azure{
+    width: 15%;
+    animation: azure 3s;
+}
+.mlt{
+    width: 40%;
+    animation: mlt 3s;
+}
+@keyframes java{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+@keyframes c{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 20%;
+    }
+}
+@keyframes cpp{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 15%;
+    }
+}
+@keyframes python{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+@keyframes sql{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 30%;
+    }
+}
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+@keyframes azure{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 15%;
+    }
+}
+@keyframes mlt{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 40%;
+    }
+}
+.container_4 p .content{ 
+    text-align: justify;
+    color: white;
+    line-height: 6pt;
+    padding-top: 2px;
+}
+.container_4 p li{
+    list-style: decimal;
+    text-align: justify;
+    list-style-position: inside;
+}
+.container_4 ol{
+    box-sizing: content-box;
+    padding-left: 20px;
+}
+.container_4 p .foot-content{
+    text-align: justify;
+}
+.container_4{
+    width: 100%;
+    background-color: var(--header);
+    height: fit-content;
+}
+.container_4 .project_1{
+    padding: 20px 50px 10px;
+    height: fit-content;
+    width: fit-content;
+}
+.container_4 .project_1 p{
+    color: white;
+}
+.container_4 .project_1 h5{
+    color: white;
+}
+img{
+    float: right;
+    padding: 10px;
+    height: 40vh;
+    width: 25vw;
+    right: 10%;
+    position: absolute;
+    z-index: 2;
+}
+.foot{
+    height: fit-content;
+    width: fit-content;
+}
+.footer{
+    height: 40vh;
+    width: 100%;
+    background-color: whitesmoke;
+}
+.icon{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    padding-left: 45%;
+    padding-top: 8%;
+}
+.icons{
+    border: 1px solid black;
+    border-radius: 30px;
+}
+.copy-icon{
+    display: flex;
+    padding-left: 42%;
+    column-gap: 2px;
+    opacity: 0.5;
+}
